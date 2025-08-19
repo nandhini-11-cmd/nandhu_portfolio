@@ -64,7 +64,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden text-2xl cursor-pointer mr-18" onClick={toggleMenu}>
+        <div className="md:hidden text-2xl cursor-pointer mr-10" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
