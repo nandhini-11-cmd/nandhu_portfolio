@@ -28,7 +28,7 @@ const Navbar = () => {
           <img
             src={Logo}
             alt="Logo"
-            className="w-10 h-10 rounded-full shadow-md"
+            className="w-10 h-10 rounded-full shadow-md animate-spin"
           />
           <span className="text-xl font-bold text-gray-900 tracking-wide">
             Nandhini
