@@ -33,9 +33,9 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-black"
+      className="min-h-screen flex flex-col items-center justify-center px-6 py-12 "
     >
-      <h2 className="text-4xl font-bold text-white mb-10 border-b-4 inline-block">
+      <h2 className="text-4xl font-bold text-black mb-10 border-b-4 inline-block">
         Skills
       </h2>
 
@@ -52,7 +52,7 @@ const Skills = () => {
               viewport={{ once: true }}
             >
               <div className="text-5xl">{skill.icon}</div>
-              <p className="text-lg font-medium text-white">{skill.name}</p>
+              <p className="text-lg font-bold text-black">{skill.name}</p>
             </motion.div>
           );
         })}

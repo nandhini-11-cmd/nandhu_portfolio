@@ -8,14 +8,10 @@ import passwordReset from "../assets/tasks/passwordReset.PNG";
 import AuthBackend from "../assets/tasks/AuthBackend.PNG";
 import Recipedb from "../assets/tasks/Recipedb.PNG";
 
-// 👉 Dummy images for now. Replace later with your screenshots in /src/assets/tasks
- // create these or replace with placeholders
-
 const tasks = [
   {
     title: "Password Reset Flow with Email Verification",
-    description:
-      "",
+    description: "",
     stack: ["Node", "Express", "MongoDB", "Nodemailer", "Bcrypt", "JWT", "React"],
     image: passwordReset,
     live: "https://amazing-frangipane-bea4be.netlify.app/",
@@ -31,7 +27,7 @@ const tasks = [
     github: "https://github.com/nandhini-11-cmd/user-auth-api",
   },
   {
-    title: "Recipes App – MVC + DB - BackEnd",
+    title: "Recipes App – Node + Express + MVC + DB - BackEnd",
     description:
       "Recipes API with MVC architecture and database connectivity. (Backend URL must be live.)",
     stack: ["Node", "Express", "MongoDB", "MVC"],
@@ -41,8 +37,7 @@ const tasks = [
   },
   {
     title: "Movie Search App (OMDB)",
-    description:
-      "Search movies and view details via the OMDB API using React.",
+    description: "Search movies and view details via the OMDB API using React.",
     stack: ["React", "OMDB API"],
     image: Movie,
     live: "https://bright-bonbon-041f68.netlify.app/",
@@ -88,57 +83,70 @@ const tasks = [
 
 const Tasks = () => {
   return (
-    <section id="tasks" className="py-16 bg-gray-950 px-6 flex flex-col items-center">
-      <h2 className="text-4xl font-bold text-white mb-10">Learning Period – Tasks</h2>
+    <section id="tasks" className="py-16 px-6 flex flex-col items-center">
+      <h2 className="text-4xl font-bold text-black mb-12">
+        Learning Period – Tasks
+      </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl w-full">
-        {tasks.map((t) => (
-          <article key={t.title} className="relative group overflow-hidden rounded-xl shadow-lg bg-gray-900 border border-gray-800">
-            {/* Image */}
-            <div className="relative w-full h-52">
-              <img src={t.image} alt={t.title} className="w-full h-full object-cover" loading="lazy" />
-              {/* Slide-up overlay */}
-              <div className="absolute inset-0 bg-black/85 text-white flex flex-col items-center justify-center px-5 text-center
-                              translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-               
-                <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
-                  {t.stack.map((s) => (
-                    <span key={s} className="px-2 py-1 rounded bg-white/10 text-xs">
-                      {s}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex gap-3">
-                  {t.live && (
-                    <a
-                      href={t.live}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 transition text-sm"
-                    >
-                      Live
-                    </a>
-                  )}
-                  {t.github && (
-                    <a
-                      href={t.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="px-3 py-1.5 rounded-lg bg-indigo-500 hover:bg-indigo-600 transition text-sm"
-                    >
-                      GitHub
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
+      <div className="flex flex-col space-y-16 max-w-6xl w-full">
+        {tasks.map((t, index) => (
+         <div
+  key={t.title}
+  className={`flex flex-col lg:flex-row items-center gap-8 rounded-2xl border border-gray-200 shadow-md overflow-hidden bg-blue-200 ${
+    index % 2 === 1 ? "lg:flex-row-reverse" : ""
+  }`}
+>
+  {/* Image */}
+  <div className="w-full lg:w-1/2">
+    <img
+      src={t.image}
+      alt={t.title}
+      className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+    />
+  </div>
 
-            {/* Static footer */}
-            <div className="p-4">
-              <h4 className="text-white font-medium text-base line-clamp-1">{t.title}</h4>
-              <p className="text-gray-400 text-sm line-clamp-2 mt-1">{t.description}</p>
-            </div>
-          </article>
+  {/* Text Content */}
+  <div className="w-full lg:w-1/2 p-6">
+    <h3 className="text-2xl font-semibold text-gray-900 mb-2">{t.title}</h3>
+    <p className="text-gray-600 mb-4">{t.description}</p>
+
+    {/* Tech Stack */}
+    <div className="flex flex-wrap gap-2 mb-4">
+      {t.stack.map((s) => (
+        <span
+          key={s}
+          className="px-2 py-1 rounded bg-blue-100 text-blue-700 text-xs font-medium"
+        >
+          {s}
+        </span>
+      ))}
+    </div>
+
+    {/* Links */}
+    <div className="flex gap-4">
+      {t.live && (
+        <a
+          href={t.live}
+          target="_blank"
+          rel="noreferrer"
+          className="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white text-sm transition"
+        >
+          Live
+        </a>
+      )}
+      {t.github && (
+        <a
+          href={t.github}
+          target="_blank"
+          rel="noreferrer"
+          className="px-4 py-2 rounded-lg bg-indigo-500 hover:bg-indigo-600 text-white text-sm transition"
+        >
+          GitHub
+        </a>
+      )}
+    </div>
+  </div>
+</div>
         ))}
       </div>
     </section>

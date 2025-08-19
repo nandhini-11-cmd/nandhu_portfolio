@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="italic min-h-screen flex flex-col md:flex-row items-center px-4 md:px-12 bg-black text-white gap-8"
+      className="italic min-h-screen flex flex-col md:flex-row items-center px-4 md:px-12  text-black gap-8"
     >
       {/* 🖼️ Left: Profile Image (1/5 width) */}
       <div className="w-full md:w-1/5 flex justify-center mt-28 ml-18">
@@ -26,15 +26,15 @@ const Hero = () => {
           Full Stack Developer (MERN) | React Enthusiast
         </p>
 
-        <div className="bg-gray-800 text-pink-400 p-4 rounded-md font-mono text-xs md:text-sm leading-relaxed whitespace-pre-wrap break-words">
+        <div className="bg-gray-800 text-green-500 p-4 rounded-md font-mono text-xs md:text-sm leading-relaxed whitespace-pre-wrap break-words">
    {`  const developer = {
        name:'Nandhini K.S.',
-       skills:['MERN Stack', 'React', 'Node', 'MongoDB',
-              'Tailwind CSS', 'SQL', 'HTML5', 'CSS3', 'JS[ES6]'],
-       hardWorker: true,
+       skills:['MERN Stack', 'React', 'Node', 'Express' 'MongoDB', 'MYSQL'
+              'Tailwind CSS', 'HTML5', 'CSS3', 'JS[ES6]'],       
        problemSolver: true,
+       teamPlayer: true,
        hireable: function() {
-       return this.hardWorker && this.problemSolver &&
+       return this.teamPlayer && this.problemSolver &&
        this.skills.length > 5;
       }
       };`}
