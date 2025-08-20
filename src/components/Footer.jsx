@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center max-w-6xl mx-auto px-6 py-5 text-gray-700 space-y-4">
           
           {/* Social Icons */}
-          <div className="flex space-x-6 text-2xl">
+          <div className="flex space-x-6 text-xl">
             <a
               href="https://github.com/nandhini-11-cmd"
               target="_blank"
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-sm md:text-base text-center font-medium">
+          <p className="text-base  text-center font-medium">
             © {new Date().getFullYear()} Nandhini ♥ | All rights reserved.
           </p>
         </div>
