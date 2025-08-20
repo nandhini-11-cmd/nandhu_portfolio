@@ -19,7 +19,7 @@ const Hero = () => {
 
       {/* 📄 Right: Developer Intro & Code Block */}
       <div className="w-full md:w-4/5  ">
-        <h1 className="text-2xl md:text-4xl mt-0 md:mt-4  font-bold mb-3  ml-18 md:ml-34">
+        <h1 className="text-2xl md:text-4xl mt-0 md:mt-4  font-bold mb-3  ml-24 md:ml-34">
           Hi, I'm <span className="text-red-500 ">Nandhini</span>
         </h1>
 
