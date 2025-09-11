@@ -12,7 +12,7 @@ const projects = [
     tech: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
     image: yummyHubImage,
     frontend: "https://github.com/nandhini-11-cmd/recipeapp-frontend",
-    backend: "https://github.com/nandhini-11-cmd/recipeapp-backend",
+    backend: "https://github.com/nandhini-11-cmd/recipeSharingApp",
     demo: "https://yummyhub-recipes.netlify.app/",
   },
   {
@@ -21,8 +21,8 @@ const projects = [
       "A responsive React app to track daily expenses and income. Includes category-based filtering, visual analytics with charts, and data persistence via localStorage.",
     tech: "React.js, Chart.js, Tailwind CSS",
     image: expensesT,
-    github: "https://github.com/yourusername/expense-tracker",
-    demo: "https://expense-demo.netlify.app",
+    github: "https://github.com/nandhini-11-cmd/income_expenses_tracker",
+    demo: "https://bucolic-druid-7443ff.netlify.app/",
   },
   {
     title: "SuvaiSpot",
@@ -30,8 +30,8 @@ const projects = [
       "A modern landing page for a restaurant, featuring an interactive UI with smooth animations, responsive design, and visually engaging layout.",
     tech: "React.js, Tailwind CSS",
     image: AhamahizhSuvai1,
-    github: "https://github.com/yourusername/suvaispot",
-    demo: "https://suvai-demo.netlify.app",
+    github: "https://github.com/nandhini-11-cmd/recipe_app",
+    demo: "https://lucky-pegasus-eb9526.netlify.app/",
   },
 ];
 
