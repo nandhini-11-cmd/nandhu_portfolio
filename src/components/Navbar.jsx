@@ -12,18 +12,14 @@ const Navbar = () => {
     "home",
     "about",
     "skills",
-    "projects",
-    "tasks",
-    "experience",
-    "education",
-    "certification",
+    "projects",    
     "contact",
   ];
 
   return (
     <nav className="fixed top-0 w-full bg-white/50 backdrop-blur-md shadow-md z-50">
       <div className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto">
-        {/* Logo */}
+       
         <div className="flex items-center space-x-2 cursor-pointer">
           <img
             src={Logo}
@@ -35,7 +31,7 @@ const Navbar = () => {
           </span>
         </div>
 
-        {/* Desktop Links */}
+        
         <ul className="hidden md:flex space-x-6 font-medium items-center">
           {navLinks.map((section) => (
             <li key={section}>
@@ -51,7 +47,7 @@ const Navbar = () => {
             </li>
           ))}
 
-          {/* Resume button */}
+       
           <li>
             <a
               href="/resume.pdf"
@@ -63,13 +59,13 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Mobile Menu Button */}
+       
         <div className="md:hidden text-2xl cursor-pointer mr-4" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+     
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <ul className="flex flex-col items-center space-y-4 py-6 font-medium">
@@ -104,3 +100,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

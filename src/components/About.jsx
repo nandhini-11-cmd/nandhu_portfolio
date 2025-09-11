@@ -21,9 +21,7 @@ const About = () => {
           Currently, I’m seeking opportunities where I can <strong>collaborate with dynamic teams</strong>, contribute to meaningful projects, and continue growing as a developer.
         </p>
 
-        <p className="font-semibold text-red-600 text-center">
-          Let’s build something awesome together!
-        </p>
+        
       </div>
     </section>
   );
