@@ -26,7 +26,7 @@ function App() {
   <Projects />
 </section>
 
-<section id="certification" className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200">
+<section id="certifications" className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200">
   <Certifications />
 </section>
 

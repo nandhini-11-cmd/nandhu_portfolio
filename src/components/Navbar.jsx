@@ -13,7 +13,7 @@ const Navbar = () => {
     "about",
     "skills",
     "projects", 
-    "certification",   
+    "certifications",   
     "contact",
   ];
 

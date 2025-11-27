@@ -72,8 +72,8 @@ export default function Projects() {
               <div className="md:w-1/2 w-full p-6 flex flex-col justify-between">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">{p.title}</h3>
-                  <p className="text-gray-600 mb-4">{p.description}</p>
-                  <p className="text-sm text-gray-500 mb-4">
+                  <p className=" mb-4 font-semibold text-gray-800">{p.description}</p>
+                  <p className="text-sm font-semibold text-gray-800 mb-4">
                     <strong>Tech Stack:</strong> {p.tech}
                   </p>
                 </div>
@@ -86,7 +86,7 @@ export default function Projects() {
                       rel="noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+                      className="px-4 py-2 bg-blue-400 text-white rounded-lg hover:bg-blue-500"
                     >
                       Live Demo
                     </motion.a>
@@ -99,7 +99,7 @@ export default function Projects() {
                       rel="noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+                      className="px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500"
                     >
                       GitHub-FrontEnd
                     </motion.a>
@@ -112,7 +112,7 @@ export default function Projects() {
                       rel="noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+                      className="px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500"
                     >
                       GitHub-BackEnd
                     </motion.a>
@@ -125,9 +125,9 @@ export default function Projects() {
                       rel="noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+                      className="px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500"
                     >
-                      GitHub
+                    GitHub MonoRepo
                     </motion.a>
                   )}
                 </div>
