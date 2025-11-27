@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="border-t border-gray-300 w-full"></div>
 
     
-      <div className="bg-gradient-to-r from-green-100 via-pink-100 to-yellow-100">
+      <div className="bg-gradient-to-rfrom-gray-200 via-yellow-100 to-emerald-200">
         <div className="flex flex-col items-center justify-center max-w-6xl mx-auto px-6 py-5 text-gray-700 space-y-4">
           
           

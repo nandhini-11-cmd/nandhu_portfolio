@@ -9,7 +9,7 @@ const About = () => {
       <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">About Me</h2>
 
       <div className="max-w-4xl text-lg md:text-xl leading-relaxed space-y-6">
-        <p className="text-red-600 font-bold text-2xl">
+        <p className="sparkle-text  font-bold text-2xl">
           Code ≠ Just Syntax. Code = Creativity + Problem solving — it’s a way to bring ideas to life.
         </p>
         <p>
@@ -36,7 +36,7 @@ const About = () => {
           Currently, I’m seeking opportunities where I can <strong>collaborate with dynamic teams</strong>, contribute
           to meaningful projects, and continue growing as a developer.
         </p>
-      </div>
+        </div>
     </section>
   );
 };

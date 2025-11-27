@@ -12,7 +12,8 @@ const Navbar = () => {
     "home",
     "about",
     "skills",
-    "projects",    
+    "projects", 
+    "certification",   
     "contact",
   ];
 

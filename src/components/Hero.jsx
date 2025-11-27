@@ -13,18 +13,20 @@ const Hero = () => {
         <h1 className="text-3xl md:text-4xl font-bold mb-3 mt-6">
           Hi, I'm <span className="text-red-500">Nandhini</span>
         </h1>
-        <p className="text-lg mt-2 md:text-xl">
+        <p className="text-lg mt-2 md:text-xl font-bold">
           Full Stack Developer (MERN) </p>
-          <p className="text-lg mt-2 md:text-xl">React Enthusiast
-        </p>
+          
         <img
           src={profileImage}
           alt="Profile"
           className="w-40 h-40 md:w-80 md:h-72 rounded-xl shadow-lg object-cover mb-6 mt-8 md:mt-4 "
         />
+       
+ 
       </div>
 
       <div className="mt-0 md:mt-6 w-3/5">
+      
   <div className="bg-gray-900 rounded-lg font-mono text-xs md:text-sm leading-relaxed whitespace-pre-wrap break-words text-left mt-0 md:mt-14 shadow-md overflow-hidden">
 
 

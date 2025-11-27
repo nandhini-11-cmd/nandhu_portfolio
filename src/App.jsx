@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 function App() {
@@ -25,8 +26,11 @@ function App() {
   <Projects />
 </section>
 
+<section id="certification" className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200">
+  <Certifications />
+</section>
 
-<section id="contact" className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200">
+<section id="contact" className="min-h-screen flex items-center justify-center bg-gradient-to-r  from-gray-200 via-yellow-100 to-emerald-200">
   <Contact />
 </section>
 
