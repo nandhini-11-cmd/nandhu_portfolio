@@ -31,21 +31,20 @@ const Certification = () => {
 
   return (
     <section
-      id="certification"
-      className="min-h-screen py-16 px-4 sm:px-6 flex flex-col items-center "
+      id="certifications"
+      className="min-h-screen py-16 px-4 sm:px-6 flex flex-col items-center bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200"
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 sm:mb-10">
+      <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 sm:mb-10 border-b-4">
         Certifications
       </h2>
 
-      <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-xl max-w-4xl w-full">
-        
-        {/* ==== TITLE ===== */}
+      <div className="bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200 p-4 sm:p-6 rounded-2xl shadow-xl max-w-4xl w-full">
+        {/* TITLE */}
         <h3 className="text-center text-lg sm:text-xl font-bold mb-4 text-gray-700 px-2">
           {certificates[selectedIndex].title}
         </h3>
 
-        {/* ==== MAIN LARGE CERTIFICATE ===== */}
+        {/* MAIN CERTIFICATE */}
         <div className="w-full flex justify-center">
           <img
             src={certificates[selectedIndex].img}
@@ -59,7 +58,7 @@ const Certification = () => {
           Certification {selectedIndex + 1} of {certificates.length}
         </p>
 
-        {/* ==== NAVIGATION BUTTONS ==== */}
+        {/* NAV BUTTONS */}
         <div className="flex justify-between mt-4 px-4">
           <button
             onClick={prev}
@@ -75,7 +74,7 @@ const Certification = () => {
           </button>
         </div>
 
-        {/* ==== THUMBNAILS GRID ==== */}
+        {/* THUMBNAILS */}
         <div className="grid grid-cols-4 sm:grid-cols-7 gap-3 mt-6">
           {certificates.map((cert, index) => (
             <img

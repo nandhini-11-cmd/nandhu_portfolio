@@ -3,14 +3,11 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="w-full mt-auto">
-    
       <div className="border-t border-gray-300 w-full"></div>
 
-    
-      <div className="bg-gradient-to-rfrom-gray-200 via-yellow-100 to-emerald-200">
-        <div className="flex flex-col items-center justify-center max-w-6xl mx-auto px-6 py-5 text-gray-700 space-y-4">
-          
-          
+      <div className="bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200">
+        <div className="flex flex-col items-center justify-center max-w-6xl mx-auto px-4 sm:px-6 py-5 text-gray-700 space-y-4">
+          {/* SOCIAL ICONS */}
           <div className="flex space-x-6 text-xl">
             <a
               href="https://github.com/nandhini-11-cmd"
@@ -38,8 +35,8 @@ export default function Footer() {
             </a>
           </div>
 
-         
-          <p className="text-base  text-center font-medium">
+          {/* COPYRIGHT */}
+          <p className="text-base text-center font-medium">
             © {new Date().getFullYear()} Nandhini ♥ | All rights reserved.
           </p>
         </div>

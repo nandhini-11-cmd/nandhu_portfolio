@@ -28,18 +28,21 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-10">
-      <div className="
+    <section
+      id="contact"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-10"
+    >
+      <div
+        className="
         max-w-6xl w-full 
         grid grid-cols-1 md:grid-cols-2 
         gap-10 
-        
         bg-gradient-to-r from-gray-200 via-yellow-100 to-emerald-200
         shadow-lg rounded-2xl p-6 sm:p-10
         hover:shadow-xl hover:scale-105 
         transform transition-all duration-300
-      ">
-
+      "
+      >
         {/* LEFT SIDE */}
         <div className="space-y-6 sm:space-y-8 mt-2">
           <h2 className="text-3xl sm:text-4xl font-bold text-black">
@@ -52,7 +55,8 @@ export default function Contact() {
 
           <div className="space-y-4 text-black">
             <p className="text-lg">
-              📧 <span className="font-semibold">Email:</span> nandhini.ks11@gmail.com
+              📧 <span className="font-semibold">Email:</span>{" "}
+              nandhini.ks11@gmail.com
             </p>
 
             <p className="text-lg">
@@ -61,7 +65,6 @@ export default function Contact() {
 
             {/* SOCIAL ICONS */}
             <div className="flex items-center gap-5 pt-2 sm:pt-4 ml-1 sm:ml-2">
-              
               {/* LinkedIn */}
               <a
                 href="https://www.linkedin.com/in/nandhiniks-mern/"
@@ -71,7 +74,8 @@ export default function Contact() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="30" height="30"
+                  width="30"
+                  height="30"
                   className="sm:w-9 sm:h-9"
                   fill="currentColor"
                   viewBox="0 0 24 24"
@@ -89,7 +93,8 @@ export default function Contact() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="30" height="30"
+                  width="30"
+                  height="30"
                   className="sm:w-9 sm:h-9"
                   fill="currentColor"
                   viewBox="0 0 24 24"
@@ -139,7 +144,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full bg-emerald-200 text-white font-semibold py-3 rounded-lg hover:bg-emerald-300 transition"
+              className="w-full bg-emerald-300 text-white font-semibold py-3 rounded-lg hover:bg-emerald-400 transition"
             >
               Send Message
             </button>
@@ -167,6 +172,6 @@ export default function Contact() {
           />
         </svg>
       </a>
-    </div>
+    </section>
   );
 }
